@@ -28,8 +28,7 @@ const Cards = ({data:{ confirmed, recovered, deaths, lastUpdate}}) =>{
                             separator = ","
                             />
                         </Typography>
-                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography color = "textSecondary">at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
+                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()} at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
                         <Typography variant="body2">Number of active cases of Covid-19</Typography>
                     </CardContent>
                 </Grid>
@@ -45,9 +44,7 @@ const Cards = ({data:{ confirmed, recovered, deaths, lastUpdate}}) =>{
                             separator = ","
                             />
                         </Typography>
-                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography color = "textSecondary">at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
-                        <Typography color = "textSecondary">at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
+                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()} at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
                         <Typography variant="body2">Number of recoveries from Covid-19</Typography>
                     </CardContent>
                 </Grid>
@@ -63,8 +60,7 @@ const Cards = ({data:{ confirmed, recovered, deaths, lastUpdate}}) =>{
                             separator = ","
                             />
                         </Typography>
-                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography color = "textSecondary">at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
+                        <Typography color = "textSecondary">Last Update: { new Date(lastUpdate).toDateString()} at { new Date(lastUpdate).toTimeString().substring(0,8)}</Typography>
                         <Typography variant="body2">Number of deaths caused by Covid-19</Typography>
                     </CardContent>
                 </Grid>
