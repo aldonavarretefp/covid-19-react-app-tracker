@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
 body {
-    background-color: rgba(180, 229, 233, 0.671);
+  background-color: #ffffff;
+  font-family: "Mukta", sans-serif;
 }
 h2 {
-  
   width: 100%;
-  color: rgb(34, 148, 34);
+  font-size: 90px;
+  font-weight: 300;
 }
 
 .container {
@@ -12,21 +14,28 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
-
-.image {
-  width: 370px;
-  margin-top: 50px;
+.containertext {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
-  
-  @media only screen and (max-width: 770px) {
-    .container {
-      margin: 0 10%;
-    }
-  
-    .image {
-      width: 60%;
-      height: 60%;
-    }
+.containertext span {
+  color: rgb(40, 217, 230);
+}
+.image {
+  width: 50%;
+
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    margin: 0 10%;
   }
 
-
+  .image {
+    width: 60%;
+    height: 60%;
+  }
+}

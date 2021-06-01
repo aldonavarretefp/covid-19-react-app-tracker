@@ -29,11 +29,13 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div id = "title">
+        <div className = {styles.containertext}>
+          <h1>Hi, this is an app created with <span>react</span>, by me, Aldo.</h1>
           <img className={styles.image} src={image} alt="COVID-19" />
-          <h2>Covid 19 App</h2>
+          <p className="display-2"><strong>COVID 19 APP</strong></p>
         </div>
         <Cards data={data} />
+        <h1>Please select the country that you are interested in.</h1>
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} /> 
       </div>
